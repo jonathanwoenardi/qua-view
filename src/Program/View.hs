@@ -273,6 +273,7 @@ applySelector vc'@ViewContext
     bindFramebuffer gl gl_FRAMEBUFFER (sbuffer $ selector vc)
     viewport gl 0 0 vpWidth vpHeight
     clear gl (gl_COLOR_BUFFER_BIT .|. gl_DEPTH_BUFFER_BIT)
+    clearColor gl 0 0 0 0.8
     selectArea vc obj view
     bindFramebuffer gl gl_FRAMEBUFFER nullRef
     viewport gl 0 0 vpWidth vpHeight

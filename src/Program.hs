@@ -72,7 +72,7 @@ initProgram ctrlsB camB ciB = (\cls cam ci -> Program
     , settings = cls
     }) <$> ctrlsB <*> camB <*> ciB
   where
-    dg = createDecorativeGrid 500 100 (vector4 0.6 0.6 0.8 1)
+    dg = createDecorativeGrid 500 100 (vector4 0.3 0.7 0.3 1)
 
 
 
